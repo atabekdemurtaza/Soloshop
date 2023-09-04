@@ -1,37 +1,56 @@
-# PropShop Ecommerce Website With Django + React
+# SoloShop - Django + React Project
 
-Live Demo can be viewed at https://www.buildproshop.com/
+SoloShop is a full-stack web application built using Django on the backend and React on the frontend. It provides a platform for managing products, user accounts, orders, and more. This README file will give you an overview of the project's structure and functionality.
 
-This project is from my Django + React collaboration wih Brad Traversy. Full Course: https://www.udemy.com/course/django-with-react-an-ecommerce-website/?couponCode=387F19CD4087385E87C1
+## Django URL Patterns
 
+In the Django backend, the URL patterns are defined as follows:
 
-![DEMO](../master/static/images/proshop_django_demo.png)
+- `/admin/`: The Django admin panel.
+- `/`: The main page of the SoloShop application.
+- `/api/products/`: API endpoints for managing products.
+- `/api/users/`: API endpoints for user-related operations.
+- `/api/orders/`: API endpoints for managing orders.
 
+These URL patterns handle the backend logic of the SoloShop project.
 
-# Features
-* Full featured shopping cart
-* Product reviews and ratings
-* Top products carousel
-* Product pagination
-* Product search feature
-* User profile with orders
-* Admin product management
-* Admin user management
-* Admin Order details page
-* Mark orders as delivered option
-* Checkout process (shipping, payment method, etc)
-* PayPal / credit card integration
+## React Routes
 
+In the React frontend, the application is structured using React Router, and the following routes are defined:
 
-# Download & Setup Instructions
+- `/`: Home page (exact route).
+- `/login`: Login screen.
+- `/register`: Registration screen.
+- `/profile`: User profile screen.
+- `/shipping`: Shipping information screen.
+- `/placeorder`: Place order screen.
+- `/order/:id`: Individual order details screen.
+- `/payment`: Payment screen.
+- `/product/:id`: Individual product details screen.
+- `/cart/:id?`: Shopping cart screen.
 
-* 1 - Clone project: git clone https://github.com/divanov11/proshop_django/
-* 2 - cd proshop_django
-* 3 - Create virtual environment: virtualenv myenv
-* 4 - myenv\scripts\activate
-* 5 - pip install -r requirements.txt
-* 6 - python manage.py runserver
+For admin functionality:
 
-# Install react modules
-* 1 - cd frontend
-* 2 - npm install
+- `/admin/userlist`: User list screen for administrators.
+- `/admin/user/:id/edit`: User editing screen for administrators.
+- `/admin/productlist`: Product list screen for administrators.
+- `/admin/product/:id/edit`: Product editing screen for administrators.
+- `/admin/orderlist`: Order list screen for administrators.
+
+These React routes handle the frontend navigation and user interactions of the SoloShop project.
+
+## Getting Started
+
+To get started with SoloShop, you'll need to set up the Django backend and the React frontend. Ensure that you have both environments configured correctly and the necessary dependencies installed. You can follow the installation and setup instructions provided in the project's documentation.
+
+## Contributing
+
+We welcome contributions to SoloShop! If you'd like to contribute to this project, please fork the repository, make your changes, and submit a pull request. We appreciate your input!
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+---
+
+Thank you for using SoloShop! If you have any questions or encounter any issues, please feel free to reach out to us. Happy shopping!
